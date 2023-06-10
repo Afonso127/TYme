@@ -1,0 +1,620 @@
+@font-face {
+    src: url('fontes/Montserrat-ExtraLight.ttf');
+    font-family: "Fonte1";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(uploads/urbanland3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.caixalog {
+
+    margin: 3% auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 35%;
+    box-sizing: border-box;
+    font-family: "Fonte1";
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+@media (max-width: 490px) {
+    .caixalog {
+        width: 45%;
+    }
+}
+
+@media (max-width: 390px) {
+    .caixalog {
+        width: 55%;
+    }
+}
+
+.caixalog:hover {
+    
+    box-shadow: 0 6px 410px rgba(91, 86, 223, 0.8), 0 3px 706px rgba(132, 154, 228, 0.5);
+    border: 1px solid #ff1414;
+}
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.login,
+.pass {
+    flex: 1 0 130px;
+    min-width: 0;
+}
+
+@media (max-width: 490px) {
+    .login,
+    .pass {
+        flex: 1 0 100px;
+    }
+}
+
+button {
+    flex: 1 0 40px;
+    padding: 6px 8px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4f70b8;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.logtit {
+    margin-top: 20px;
+    font-family: "Fonte1";
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: black;
+ 
+    margin: auto;
+
+}
+
+.weltit {
+    animation: typing 2s steps(20, end);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000;
+    font-family: "Fonte1";
+    color: #1f19c4;
+    background-color: aliceblue;
+    width: 80%;
+   
+  }
+
+  .datetit {
+    animation: typing 2s steps(20, end);
+    overflow: hidden;
+    float: right;
+    white-space: nowrap;
+    border-right: 3px solid #000;
+    font-family: "Fonte1";
+    color: #1f19c4;
+    background-color: aliceblue;
+    width: 80%;
+    margin-top: 20px;
+   
+  }
+
+  @media (max-width: 720px){
+    .datetit {
+    
+        font-size: 24px; 
+      }
+
+    }
+
+    @media (max-width: 675px){
+        .datetit {
+        
+            font-size: 22px; 
+          }
+    
+        }
+    @media (max-width: 640px){
+        .datetit {
+                font-size: 20px; 
+                width: 90%;
+        }
+        
+    }
+
+    @media (max-width: 501px){
+        .datetit {
+            width: 95%; 
+        }
+        
+    }
+    
+    @media (max-width: 472px){
+        .datetit {
+            font-size: 18px; 
+        }
+        
+    }
+
+    @media (max-width: 380px){
+        .datetit {
+            font-size: 16px; 
+        }
+        
+    }
+
+     
+    @media (max-width: 426px){
+        .datetit {
+            font-size: 14px; 
+        }
+        
+    }
+
+    @media (max-width: 334px){
+        .datetit {
+            font-size: 12px; 
+        }
+        
+    }
+    
+
+  @media (max-width: 722px){
+    .weltit {  
+        width: 83%;   
+      }
+    
+    }
+    @media (max-width: 689px){
+        .weltit {
+        
+            width: 87%;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 482px){
+        .weltit {
+        
+            width: 95%;   
+        }
+
+    @media (max-width: 436px){
+         .weltit {
+                width: 100%;   
+        }
+    }
+
+    @media (max-width: 413px){
+        .weltit {
+            font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 413px){
+        .weltit {
+            font-size: 14px;
+            }
+        
+    }
+
+    @media (max-width: 322px){
+        .weltit {
+            font-size: 12px;
+            }
+        
+    }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+
+  .menu-container {
+    border: 1px solid #b84a4a;
+    width: 60%;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(51, 14, 14, 0.9);
+   
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+  .unimenu {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    box-shadow: 0 6px 410px rgba(91, 86, 223, 0.8), 0 3px 706px rgba(132, 154, 228, 0.5);
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Fonte1";
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Add this line */
+    text-align: center; /* Add this line */
+    
+    color: #1f19c4;
+    text-decoration: overline;
+    font-size: larger;
+  }
+
+  @media (max-width:586px ){
+    .unimenu {
+        width: 120px;
+        height: 120px;
+    }
+  }
+  
+  .unimenu:hover {
+    background-color: #b84a4a;
+  }
+  
+
+  .footer {
+    background-color: #f5f5f5;
+    padding: 5px;
+  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .footer-text {
+    color: #999;
+  }
+
+  .network{
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .network:hover{
+    filter: grayscale(100%);
+  }
+
+span{
+    text-decoration:underline;
+}
+
+.calendar-container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 155px;
+    background-color: #f2f2f2;
+ 
+    padding: 10px;
+    width: 60%;
+}
+
+
+@media (max-width:722px ){
+    .calendar-container {
+       width: 70%;
+    }
+  }
+
+  @media (max-width:602px ){
+    .calendar-container {
+       width: 80%;
+    }
+  }
+
+  @media (max-width:547px ){
+    .calendar-container {
+       width: 100%;
+    }
+  }
+
+  @media (max-width:429px ){
+    .calendar-container {
+       gap: 10px;
+    }
+  }
+
+  @media (max-width:374px ){
+    .calendar-container {
+       padding: 0px;
+       gap: 0px;
+    }
+  }
+.calendar {
+    width: 50%;
+    max-width: 300px;
+  
+
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    color: #4c4ab8;
+    background-color: #f2f2f2;
+}
+
+@media (max-width:984px ){
+    .calendar {
+       font-size: 14px;
+    }
+  }
+
+  @media (max-width:864px ){
+    .calendar {
+       font-size: 10px;
+    }
+  }
+
+  @media (max-width:424px ){
+    .calendar {
+       font-size: 8px;
+    }
+  }
+
+
+
+.calendar .header {
+    background-color: #f2f2f2;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.calendar td:hover {
+    background-color: #FF6B6B; 
+}
+
+
+
+.calendar td.present-day {
+    background-color: #FF6B6B; 
+    color: #FFFFFF; 
+  }
+
+  .quote-container {
+    width: 50%;
+    font-family: "Fonte1";
+    
+}
+
+@media (max-width:441px ){
+    .quote-container {
+        width: 30%;
+        font-family: "Fonte1";
+    }
+  }
+
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    text-align: left;
+}
+
+@media (max-width:441px ){
+    .quote {
+        font-size: 13px;
+       
+    }
+   
+  }
+
+  @media (max-width:370px ){
+    .quote {
+        font-size: 10px;
+       
+    }
+   
+  }
+
+  .todocontainer{
+    margin: 0px;
+    padding: 0px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-family: "Fonte1";
+  }
+
+  .todolist{
+    width: 350px;
+  
+    font-family: "Fonte1";
+
+  }
+
+.todolist header{
+  margin: 0px;
+  padding: 1em 0;
+  background-color: #fff;
+  text-align: center;
+  color: #e11c3e;
+  border-top: 1em solid #e11c3e;
+  border-bottom: 1px solid #eeeeee;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.todolist footer{
+  margin: 0px; 
+  padding: 0.7em 0;
+  background-color: #fff;
+  border-top: 1px solid #eeeeee;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.todolist .do input[type=checkbox]{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+
+}
+
+.todolist .do label {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 0.75em 1em;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.todolist .do label:hover {
+  transform: translateX(-1em);
+}
+
+.todolist .do label::before{
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cccccc ;
+  border-radius: 30%;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  
+}
+
+.todolist .do label::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #e11c3e ;
+  transition: .3s ease-in-out;
+}
+
+.todolist .do label:hover::after{
+  width: 5px;
+}
+
+.todolist .do label .fa-check{
+  position: absolute;
+  left: .7em; 
+  top: .25em;
+  font-size: 1.7em;
+  color: #e11c3e;
+  opacity: 0;
+  transform: .3s ease-in-out;
+}
+
+.todolist .do input[type=checkbox]:checked + label .fa-check{
+  opacity: 1;
+
+}
+
+.todolist .do label .label{
+  position: relative; 
+  color: #2d3436;
+  transition: .3s ease-in-out;
+
+}
+
+.todolist .do input[type=checkbox]:checked + label .label{
+  color: #aaaaaa;
+}
+
+.todolist .do label .label::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  top: 50%;
+  height: 1px; 
+  background-color: #aaaaaa;
+  transform: .3s ease-in-out;
+
+}
+
+.todolist .do input[type=checkbox]:checked + label .label::after{
+  right: 0;
+}
+  
+  
